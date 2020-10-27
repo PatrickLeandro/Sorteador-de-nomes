@@ -146,7 +146,7 @@ display: none;
     display: block;
   }  
 body{
-    width: 100%;
+    width: 98%;
 }
 #txt{
   width: 90%;
@@ -197,20 +197,20 @@ h3{
 }
 
 .content label span:nth-child(1){
-  top: 0;
+  top: 5px;
 }
 
 .content label span:nth-child(2){
-  top: 8px;
+  top: 13px;
 }
 
 .content label span:nth-child(3){
-  top: 16px;
+  top: 21px;
 }
 
 #checkbox-menu:checked + label span:nth-child(1){
   transform: rotate(-45deg);
-  top: 8px;
+  top: 13px;
 }
 
 #checkbox-menu:checked + label span:nth-child(2){
@@ -219,7 +219,7 @@ h3{
 
 #checkbox-menu:checked + label span:nth-child(3){
   transform: rotate(45deg);
-  top:8px;
+  top:13px;
 }
 #resultado{
   width: 100%;
