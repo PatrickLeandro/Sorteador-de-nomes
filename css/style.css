@@ -112,6 +112,33 @@ flex-direction: column;
 #checkbox-menu{
 display: none;
 }
+
+/* ---------------------------------
+#######        Menu        ########
+------------------------------------ */
+.cards{
+  display: flex;
+}.card{
+  width: 47%;
+  height: 80px;
+  margin: auto;
+  margin-top: 15px;
+  border: 1px solid;
+  padding: 0;
+}
+.right{
+  float: right;
+}
+.img-darkMode{
+  border-radius: 5px;
+}
+.h3-img{
+  display: inline;
+}
+.card input{
+  display: none;
+}
+
                       /* ###################      CONFIGURAÇÃO PARA CELULARES      ####################*/
 @media screen and (max-width: 600px){ 
   #checbox-menu{
@@ -195,5 +222,6 @@ label span:nth-child(3){
 }
 #resultado{
   width: 100%;
+  
 }
 }
