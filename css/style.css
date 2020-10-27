@@ -177,7 +177,7 @@ h3{
   opacity: 0;
 }
 
-label{
+.content label{
   cursor: pointer;
   position: relative;
   display: block;
@@ -185,7 +185,7 @@ label{
   width: 30px;
 }
 
-label span{
+.content label span{
   position: absolute;
   display: block;
   height: 5px;
@@ -195,15 +195,15 @@ label span{
   transition: 0.25s ease-in-out;
 }
 
-label span:nth-child(1){
+.content label span:nth-child(1){
   top: 0;
 }
 
-label span:nth-child(2){
+.content label span:nth-child(2){
   top: 8px;
 }
 
-label span:nth-child(3){
+.content label span:nth-child(3){
   top: 16px;
 }
 
