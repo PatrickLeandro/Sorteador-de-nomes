@@ -139,6 +139,26 @@ display: none;
 .card input{
   display: none;
 }
+.nome-sorteio{
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+.txt-sorteio{
+  width: 240px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  background-color: var(--body-bg);
+
+}
+/* ######     Configuração do texto de explicação do sistema para o usuário    ###### */
+.exp-sort{
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
 
                       /* ###################      CONFIGURAÇÃO PARA CELULARES      ####################*/
 @media screen and (max-width: 600px){ 
@@ -163,6 +183,12 @@ h2{
 }
 h3{
   font-size: 1rem;
+}
+h4{
+  font-size: 0.8rem;
+}
+p{
+  font-size: 0.7rem;
 }
 
 .content{
@@ -224,5 +250,25 @@ h3{
 #resultado{
   width: 100%;
   
+}
+#resultado button{
+  color: white;
+}
+.nome-sorteio{
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.txt-sorteio{
+  position: relative;
+  top: 20px;
+  width: 240px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+
+}
+.exp-sort{
+  width: 98%;
 }
 }
