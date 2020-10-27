@@ -1,0 +1,199 @@
+:root{
+    --body-bg: #fafafa;
+    --body-color: #555;
+    --link-color: #222;
+    --link-color-hover: #ec5840;
+    --txt-bg: #fafafa;
+    --txt-color: #212529;
+    --main-bg-color: #0d1b29;
+}
+.dark-mode:root{
+    --body-bg: #212529;
+    --body-color: #899095;
+    --link-color: #dee2e6;
+    --link-color-hover: #3cc368;
+    --txt-bg: #212529;
+    --txt-color: #fafafa;
+    --main-bg-color: #0d1b29;
+}
+body{
+    font-family: Nunito, sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.main{
+  background-color: var(--main-bg-color);
+  color: rgb(150, 150, 150);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25%;  
+  display: inline;
+}
+.content{
+  float: right;
+  width: 75%;
+  display: inline;
+}
+#txt{
+  background-color: var(--txt-bg);
+  color: var(--txt-color);
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  border-color: #d3d3d3;
+  width: 70%;
+    }
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: auto;
+}
+.btn:hover, .btn:focus {
+color: #fff;
+outline: 0;
+}
+.fourth {
+color: var(--txt-color);
+background-image: -webkit-linear-gradient(45deg, #90ee90 50%, transparent 50%);
+background-image: linear-gradient(45deg, #90ee90 50%, transparent 50%);
+background-position: 100%;
+background-size: 400%;
+-webkit-transition: background 300ms ease-in-out;
+transition: background 300ms ease-in-out;
+border: 2px solid #90ee90;
+}
+.fourth:hover {
+background-position: 0;
+}
+
+
+#resultado{
+position: absolute;
+top: 0;
+width: 75%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.950);
+color: aliceblue;
+font-size: 50px;
+display: none;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#checkbox-menu{
+display: none;
+}
+                      /* ###################      CONFIGURAÇÃO PARA CELULARES      ####################*/
+@media screen and (max-width: 600px){ 
+  #checbox-menu{
+    display: block;
+  }  
+body{
+    width: 100%;
+}
+#txt{
+  width: 90%;
+  background-color: var(--txt-bg);
+  color: var(--txt-color);
+  
+}
+
+h1{
+  font-size: 1.7rem;
+}
+h2{
+  font-size: 1.4rem;
+}
+h3{
+  font-size: 1rem;
+}
+
+.content{
+  width: 100%;
+}
+
+.main{
+  display: none;
+  width: 70%;
+}
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #f16234;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+#resultado{
+  width: 100%;
+}
+}

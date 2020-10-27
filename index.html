@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sortedor de Nomes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    
+    <div class="main" id="menu-hamburguer">
+        <h1 class="title">Sorteios.com.br</h1>
+        <label for="switch" id="checkBox">
+          <input type="checkbox" id="switch">Modo escuro    
+        </label>
+      </div>
+      
+      <div class="content">
+        <input type="checkbox" id="checkbox-menu">
+  
+      <label for="checkbox-menu" class="menu" onclick="teste()" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+        <h1>Sortedor de nomes</h1>
+        <h2>Sortear nomes é o que você precisa? Nós vamos te ajudar!</h2>
+        <p>Crie abaixo uma lista inserindo os nomes que participarão do sorteio, clique em sortear e deixe o resto conosco.</p>
+        
+        
+  
         <textarea id="txt" oninput="text()" rows="20" cols="40" placeholder="Digite os nomes aqui, um por linha... "></textarea>
         <br>
-        <p id="resultado">Resultado</p>
-
-        <button onclick="sortear()">Clique aqui</button>
-        
+        <div id="resultado">
+          <p id="sorteados"></p>
+          
+        <button onclick="reset()" class="btn fourth">Novo sorteio</button>
+        </div>
+  
+        <button onclick="sortear()" class="btn fourth">Sortear</button>
+      
+      </div>
+     
     
-        <script src="script.js"></script>
+        <script src="script/script.js"></script>
     </div>
     
 </body>
