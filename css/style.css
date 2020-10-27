@@ -119,11 +119,12 @@ display: none;
 .cards{
   display: flex;
 }.card{
-  width: 47%;
-  height: 80px;
+  width: 45%;
+  height: 100px;
   margin: auto;
-  margin-top: 15px;
-  border: 1px solid;
+  margin-top: 7%;
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 10px;
   padding: 0;
 }
 .right{
