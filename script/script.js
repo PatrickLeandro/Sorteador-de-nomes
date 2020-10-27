@@ -1,11 +1,14 @@
 let contador = 0;
 function teste() {
+  let sorteio = document.getElementById("txt-sorteio");
   let menu = document.getElementById("menu-hamburguer");
     if (contador == 0) {
       menu.style.display = 'block';
+      sorteio.style.display = 'none';
       contador = 1;
       }else{
         menu.style.display = 'none';
+        sorteio.style.display = 'block';
         contador = 0;
       }
       
