@@ -48,8 +48,12 @@ function iniciarModal(modalID) {
       }
     });
 
-    var ran = Math.floor(Math.random() * sort);
+    
+    var ran = Math.floor(Math.random() * sort);     
     document.getElementById("sorteados").innerHTML= nomes[ran];
+
+    
+    
 
   }
 
@@ -57,4 +61,5 @@ function iniciarModal(modalID) {
 
 let logo = document.querySelector('.sorteio');
 logo.addEventListener('click', () => iniciarModal('modal'));
+
 
