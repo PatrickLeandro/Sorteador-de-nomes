@@ -38,17 +38,23 @@ function teste() {
       }
   }
 
-  
+function iniciarModal(modalID) {
+  const modal = document.getElementById(modalID);
+  if (modal) {
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (e) => {
+      if (e.target.id == modalID || e.target.className == 'fechar') {
+        modal.classList.remove('mostrar');
+      }
+    });
 
-  function sortear() {
-      var ran = Math.floor(Math.random() * sort);
-      
-      
-      document.getElementById("sorteados").innerHTML="O nome sorteado foi: <br>"+ nomes[ran];
-      let res = document.getElementById("resultado");
-      res.style.display = 'flex';
+    var ran = Math.floor(Math.random() * sort);
+    document.getElementById("sorteados").innerHTML= nomes[ran];
+
   }
-  function reset() {
-    let res = document.getElementById("resultado");
-      res.style.display = 'none';
+
 }
+
+let logo = document.querySelector('.sorteio');
+logo.addEventListener('click', () => iniciarModal('modal'));
+

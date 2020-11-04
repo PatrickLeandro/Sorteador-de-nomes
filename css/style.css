@@ -172,8 +172,67 @@ display: none;
   text-align: justify;
 }
 
+/* #####          MOLDAL           ##### */
+
+.modal-container{
+  width: 75%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal{
+  background-color: var(--body-bg);
+  width: 60%;
+  min-width: 350px;
+  max-width: 600px;
+  padding: 40px;
+  padding-top: 1px;
+  border: 5px solid ;
+  border-radius: 5px;
+  position: relative;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mostrar .modal{
+  animation: modal .5s;
+}
+.modal h1{
+  border-bottom: 1px solid;
+
+}
+.fechar{
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #90ee90;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+}
+.modal-container.mostrar{
+  display: flex;
+
+}
                       /* ###################      CONFIGURAÇÃO PARA CELULARES      ####################*/
-@media screen and (max-width: 600px){ 
+@media screen and (max-width: 800px){ 
   #checbox-menu{
     display: block;
   }  
@@ -194,13 +253,13 @@ h2{
   font-size: 1.4rem;
 }
 h3{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 h4{
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 p{
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .content{
@@ -282,5 +341,8 @@ p{
 }
 .exp-sort{
   width: 98%;
+}
+.modal-container{
+  width: 100%;
 }
 }

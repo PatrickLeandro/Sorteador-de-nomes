@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sortedor de Nomes</title>
+   
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -67,7 +69,8 @@
           <h4>Descrição do sorteio (opcional): </h4> &nbsp;&nbsp;&nbsp;
           <input type="text" class="txt-sorteio right" id="txt-sorteio" placeholder="Digite a descrição do sorteio">
         </div>
-        <button onclick="sortear()" class="btn fourth">Sortear</button>
+        <button class="btn fourth sorteio">Sortear</button>
+
         <div class="exp-sort">
           <h4>O que é um sorteador de nomes?</h4>
           <p>Um sorteador de nomes recebe um lista de nomes fornecida pelo usuário, analisa esta lista e faz um sorteio. <br>
@@ -80,16 +83,23 @@
           </p>
         </div>
         <div id="resultado"><br><br>
-          <h1 id="sorteados"></h1>
           
-          <button onclick="reset()" class="btn fourth">Novo sorteio</button>
+            <button onclick="reset()" class="btn fourth">Novo sorteio</button>
         </div>
-        <br><br>
+          <br><br>
+        <div class="modal-container" id="modal">
+          <div class="modal">
+            <button class="fechar">X</button>
+            <h1>Resultado do Sorteio</h1>
+            
+            <h3 id="sorteados"></h3>
+          </div>
+        </div>
       </div>
-     
+    </div>
+        
     
         <script src="script/script.js"></script>
-    </div>
-    
+
 </body>
 </html>
