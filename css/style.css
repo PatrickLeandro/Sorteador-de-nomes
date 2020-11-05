@@ -48,6 +48,13 @@ body{
   border-color: #d3d3d3;
   width: 70%;
     }
+#qtd-nomes{
+  width: 30px;
+  padding: 5px;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  border: 1px solid rgb(151, 151, 151);
+}
 .btn {
   box-sizing: border-box;
   -webkit-appearance: none;

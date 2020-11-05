@@ -38,6 +38,8 @@ function teste() {
       }
   }
 
+desc = document.getElementById('txt-sorteio');
+res = document.getElementById('res');
 function iniciarModal(modalID) {
   const modal = document.getElementById(modalID);
   if (modal) {
@@ -45,13 +47,18 @@ function iniciarModal(modalID) {
     modal.addEventListener('click', (e) => {
       if (e.target.id == modalID || e.target.className == 'fechar') {
         modal.classList.remove('mostrar');
+        res.innerHTML = '';
       }
     });
-
+    let qtdn = document.getElementById('qtd-nomes');
+    let c = 1;
+    while (c <= qtdn.value) {
+      var ran = Math.floor(Math.random() * sort);     
+      res.innerHTML += c + '- ' + nomes[ran] + '<br>' ;
+      c++;
+    }
     
-    var ran = Math.floor(Math.random() * sort);     
-    document.getElementById("sorteados").innerHTML= nomes[ran];
-
+    document.getElementById('describe').innerHTML=""+desc.value
     
     
 
