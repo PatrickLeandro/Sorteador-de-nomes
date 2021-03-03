@@ -33,6 +33,7 @@ body{
   left: 0;
   width: 25%;  
   display: inline;
+  padding-top: 15px;
 }
 .content{
   float: right;
